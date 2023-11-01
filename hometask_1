@@ -1,11 +1,12 @@
-#task_1
+#task-1
 variable_1 = int(input("введіть число №1"))
 variable_2 = int(input("введіть число №2"))
 result_sum = (variable_1 + variable_2)
 result_substr = (variable_1 - variable_2)
 result_mult = (variable_1 * variable_2)
 result_div = (variable_1 / variable_2)
-print(result_sum)
-print(result_substr)
-print(result_mult)
-print(int(result_div))
+print("сума двоих чисел дорівнює", (result_sum))
+print("різниця двох чисел дорівнює", (result_substr))
+print("добуток двох чисел дорівнює", (result_mult))
+print("частка двох чисел дорівнює", float(result_div))
+
