@@ -10,3 +10,8 @@ print("різниця двох чисел дорівнює", (result_substr))
 print("добуток двох чисел дорівнює", (result_mult))
 print("частка двох чисел дорівнює", float(result_div))
 
+#task-2
+variable_1 = int(input("введіть число №1"))
+variable_2 = int(input("введіть число №2"))
+result = int(variable_1 % variable_2)
+print("Залишок від ділення числа №1 на число №2 є", (result))
