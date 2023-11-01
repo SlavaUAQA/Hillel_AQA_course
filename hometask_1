@@ -1,6 +1,7 @@
 #task-1
-variable_1 = int(input("введіть число №1"))
-variable_2 = int(input("введіть число №2"))
+print("Завдання №1")
+variable_1 = int(input("введіть число №1 "))
+variable_2 = int(input("введіть число №2 "))
 result_sum = (variable_1 + variable_2)
 result_substr = (variable_1 - variable_2)
 result_mult = (variable_1 * variable_2)
@@ -11,7 +12,33 @@ print("добуток двох чисел дорівнює", (result_mult))
 print("частка двох чисел дорівнює", float(result_div))
 
 #task-2
-variable_1 = int(input("введіть число №1"))
-variable_2 = int(input("введіть число №2"))
+print("Завдання №2")
+variable_1 = int(input("введіть число №1 "))
+variable_2 = int(input("введіть число №2 "))
 result = int(variable_1 % variable_2)
 print("Залишок від ділення числа №1 на число №2 є", (result))
+
+#task-3
+print("Завдання №3")
+variable_1 = int(input("введіть число №1 "))
+variable_2 = int(input("введіть число №2 "))
+result = int(variable_1 // variable_2)
+print("Число №1 ділиться на число №2 без залишку", (result), "раз(ів)")
+
+#task-5
+print("Завдання №5")
+variable_1 = int(input("введіть число №1 "))
+variable_2 = int(input("введіть число №2 "))
+result_1 = variable_1 + variable_2
+result_2 = (str(variable_1) + str(variable_2))
+print("Сума чисел №1 і №2 є:", result_1)
+print("Результатом об'єднання чисел №1 і №2 є:", result_2)
+
+#task-6
+print("Завдання №6")
+variable_1 = int(input("В якому році ви народились? "))
+variable_2 = str(input("Як ваше ім'я? "))
+variable_3 = int (input("Який зараз рік? "))
+result_1 = str(variable_3 - variable_1)
+print("Вас звуть " + (variable_2))
+print("Вам " + result_1 + " років")
