@@ -42,3 +42,37 @@ variable_3 = int (input("Який зараз рік? "))
 result_1 = str(variable_3 - variable_1)
 print("Вас звуть " + (variable_2))
 print("Вам " + result_1 + " років")
+
+#task-7
+print("Завдання №7")
+variable_1 = int(input("Яка зараз температура в градусах Цельсія? "))
+result_1 = float((variable_1 * 9 / 5)+32)
+print("Зараз " + (str(result_1)) + "градусів по Фаренгейту")
+
+#task-8
+print("завдання №8")
+variable_1 = int(input("Яка зараз температура в градусах Фаренгета?"))
+result_1 = float((variable_1 - 32) * 5 / 9)
+print("Зараз " + (str(result_1)) + " градусів Цельсія")
+
+
+
+#task-12
+print("Завдання №12")
+variable_1 = int(input("Скільки хвилин пройшло з початку доби? "))
+result_1 = variable_1 // 60
+result_2 = variable_1 % 60
+result_3 = result_1 // 24
+if result_3 < 1:
+ print("Зараз " + str(result_1) + " годин та " + str(result_2) + " хвилин")
+else:
+    print("Минуло " + str(result_3) + ("доби, ") + (str(result_1 - 24)) + " годин та " + str(result_2) + " хвилин")
+
+#task-13
+print("Завдання №13")
+variable_1 = int(input("Введіть кільсть журавликів "))
+result_1 = float(variable_1 / 6)
+result_2 = float((result_1 + result_1) * 2)
+print("Катя зробила " + str(result_2) + " журавликів")
+print("Петро зробив " + str(result_1) + " журавликів")
+print("Сергій зробив " + str(result_1) + " журавликів")
