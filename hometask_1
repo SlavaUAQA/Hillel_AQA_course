@@ -25,6 +25,11 @@ variable_2 = int(input("введіть число №2 "))
 result = int(variable_1 // variable_2)
 print("Число №1 ділиться на число №2 без залишку", (result), "раз(ів)")
 
+#task-4
+print("Завдання №4")
+variable_1 = int(input("Введіть будь яку кількість цифр"))
+print("Результат перетворення на число виглядає так: " + str(variable_1))
+
 #task-5
 print("Завдання №5")
 variable_1 = int(input("введіть число №1 "))
@@ -55,6 +60,35 @@ variable_1 = int(input("Яка зараз температура в градус
 result_1 = float((variable_1 - 32) * 5 / 9)
 print("Зараз " + (str(result_1)) + " градусів Цельсія")
 
+#task-9
+print("завдання №8")
+variable_1 = int(input("Введіть довжину першого катета"))
+variable_2 = int(input("Введіть довжину другого катета"))
+result_1 = variable_1 ** 2
+result_2 = variable_2 ** 2
+result_3 = (result_1 + result_2) ** (1/2)
+print("Довжина гіпотенузи: " + str(result_3))
+
+
+#task-10
+print("завдання №10")
+variable_1 = int(input("Введіть кількість яблук "))
+variable_2 = int(input("Введіть кількість школярів "))
+result_1 = (variable_1 // variable_2)
+result_2 = (variable_1 % variable_2)
+print("Кожен школяр отримає " + str(result_1) + " яблук")
+print("В кошику залишиться " + str(result_2) + " яблук")
+
+#task-11
+print("завдання №10")
+variable_1 = int(input("Введіть кількість олівців, які купив Вася "))
+variable_2 = int(input("Введіть кількість ручок, які купив Вася "))
+variable_3 = int(input("Введіть кількість фломастерів, які купив Вася "))
+amount_1 = variable_1 * 3
+amount_2 = variable_2 * 5
+amount_3 = variable_3 * 12
+result = amount_1 + amount_2 + amount_3
+print("Загальна сума покупки склала " + str(result) + " гривень")
 
 
 #task-12
@@ -66,7 +100,7 @@ result_3 = result_1 // 24
 if result_3 < 1:
  print("Зараз " + str(result_1) + " годин та " + str(result_2) + " хвилин")
 else:
-    print("Минуло " + str(result_3) + ("доби, ") + (str(result_1 - 24)) + " годин та " + str(result_2) + " хвилин")
+    print("Минуло " + str(result_3) + "доби, " + (str(result_1 - 24)) + " годин та " + str(result_2) + " хвилин")
 
 #task-13
 print("Завдання №13")
@@ -76,3 +110,9 @@ result_2 = float((result_1 + result_1) * 2)
 print("Катя зробила " + str(result_2) + " журавликів")
 print("Петро зробив " + str(result_1) + " журавликів")
 print("Сергій зробив " + str(result_1) + " журавликів")
+
+#task-14
+print("Завдання №14")
+variable_1 = int(input("введіть зарплатню за три місяці "))
+result = float(variable_1 * 0.05 + 4422)
+print("Ваша загальна сума подітків за три місяці складає " + str(result) + " гривень")
