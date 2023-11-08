@@ -1,1 +1,47 @@
+#task-1
 
+variable_1 = int(input("Скільки вам років? "))
+if variable_1 <= 7:
+    print("Де твої батьки?")
+else:
+    if variable_1 < 16:
+        print("Це фільм для дорослих!")
+    else:
+        if variable_1 >= 16 and variable_1 < 65:
+            print("Ми можемо продати вам квиток! Виберіть будь ласка місця")
+        else:
+            if variable_1 >= 65:
+                print("Покажіть пенсійне посвідчення!")
+
+
+#task-3
+variable_1 = input("введіть число №1")
+variable_2 = input("введіть число №2")
+variable_3 = input("Чи є введені числа str або int?")
+if variable_3.lower() == "str":
+    print(int((variable_1) + (variable_2)) * 3)
+else:
+    if variable_3.lower() == "int":
+      print((int(variable_1) + int(variable_2)) * 3)
+
+
+#task-4 (additional)
+print("Ласкаво просимо у програму вирішення квадратного рівнянння")
+variable_1 = input("Введіть коефіцієнт А. Нагадуємо, що А не може дорівнювати 0 " )
+if int(variable_1) == 0:
+    print("Як ми і казали - А не може дорівнювати 0. Рівняння не має математичного смислу")
+else:
+    variable_2 = input("введіть коефіцієнт B ")
+    variable_3 = input("Введіть коефіцієнт С ")
+    discriminant_1 = int(variable_2) ** 2 - 4 * int(variable_1) * int(variable_3)
+    result_1 = -(float(variable_2) / 2 * float(variable_1))
+    result_2 = (-((float(variable_2)) + (float(discriminant_1) ** (1/2)))) / (2 * float(variable_1))
+    result_3 = (-((float(variable_2)) - (float(discriminant_1) ** (1/2)))) / (2 * float(variable_1))
+    if discriminant_1 < 0:
+        print("рівняння немає коренів")
+    else:
+        if discriminant_1 == 0:
+            print(str(result_1) + " є єдиним коренем рівняння")
+        else:
+            if discriminant_1 > 0:
+                print("Рівняння має два корені: " + str(result_2) + " та " + str(result_3))
