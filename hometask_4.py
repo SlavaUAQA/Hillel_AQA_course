@@ -23,18 +23,18 @@ buylist = []
 request = str(input("Введіть продукт, який ви хочете купити"))
 buylist.append(request)
 for request in range(100000):
-    request = str(input("Введіть продукт, який ви хочете купити. Напишіть 'все' якщо більше не бажаєте вводити продукти"))
+    request = str(input("Введіть продукт, який ви хочете купити. Напишіть 'все' якщо більше не бажаєте вводити продукти "))
     buylist.append(request)
     if request == "все":
         break
 buylist.pop()
 print(f'Ваш поточний список покупок: {buylist}')
 while buylist != []:
-    products = int(input("Введіть номер продукту, який ви вже купили"))
+    products = int(input("Введіть номер продукту, який ви вже купили "))
     buylist.pop(products - 1)
     print(f'Ваш поточний список покупок: {buylist}')
 if bool(buylist) is False:
-    buylist.append(input("Додайте список покупок на наступний раз"))
+    buylist.append(input("Додайте список покупок на наступний раз "))
     print(f'Ваш список покупок на наступний раз: {buylist}')
 print("Дякуємо за користування нашими послугами. До побачення!")
 
