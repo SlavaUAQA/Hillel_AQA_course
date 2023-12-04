@@ -15,4 +15,4 @@ def test_numbers_2():
 def test_words_list():
     result = words_list()
     for i in range(len(result) - 1):
-        assert result[i] <= result[i + 1], "Список не отсортирован"
+        assert len(result[i]) <= len(result[i + 1]), "Список не отсортирован"
