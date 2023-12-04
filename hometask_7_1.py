@@ -9,5 +9,5 @@ def numbers_2(list_numbers = [1, 14, 175, 1000, 5, 0, 2]):
 
 
 def words_list(list_words = ["оставь", "надежду", "всяк", "сюда", "входящий"]):
-    sorted_words_list = sorted(list_words)
+    sorted_words_list = sorted(list_words, key = len)
     return sorted_words_list
