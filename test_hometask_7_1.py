@@ -4,16 +4,10 @@ from hometask_7_1 import numbers_2
 from hometask_7_1 import words_list
 
 def test_numbers():
-    result = numbers()
-    for i, number in enumerate(result[:-1]):
-        assert number <= result[i + 1], "Список не отсортирован"
+    assert numbers([100, 4, 11, 777, 50, 10, 999]) == [4, 10, 11, 50, 100, 777, 999], "Список не отсортирован"
 
 def test_numbers_2():
-    result = numbers_2()
-    for i, number in enumerate(result[:-1]):
-        assert number >= result[i + 1], "Список не отсортирован"
+    assert numbers_2([100, 4, 11, 777, 50, 10, 999]) == [999, 777, 100, 50, 11, 10, 4], "Список не отсортирован"
 
 def test_words_list():
-    result = words_list()
-    for i, word in enumerate(result[:-1]):
-        assert len(result[i]) <= len(result[i + 1]), "Список не отсортирован"
+    assert words_list(["оставь", "надежду", "всяк", "сюда", "входящий"]) == ["всяк", "сюда", "оставь", "надежду", "входящий"], "Список не отсортирован по длине слова"
