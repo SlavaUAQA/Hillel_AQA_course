@@ -1,3 +1,5 @@
 pytest==7.4.3
 requests==2.31.0
 DateTime==5.3
+pytest-xdist==3.5.0
+flake8==6.1.0
