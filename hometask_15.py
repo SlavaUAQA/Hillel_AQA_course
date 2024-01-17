@@ -2,8 +2,8 @@
 import pytest
 
 # task-1
-spisok = [x for x in range(34, 121) if (x % 2 == 0 and (x % 3 == 0))]
-print(spisok)
+task1_list = [x for x in range(34, 121) if (x % 2 == 0 and (x % 3 == 0))]
+print(task1_list)
 
 
 # task-2
