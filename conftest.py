@@ -1,4 +1,6 @@
+# -*- coding: utf-8 -*-
 import pytest
+from selenium import webdriver
 import requests
 
 
@@ -9,3 +11,11 @@ def fixture_Chuck(request):
     request.cls.response = response
     request.cls.status_code = status_code
     yield response, status_code
+
+@pytest.fixture
+def chrome():
+    options = webdriver.ChromeOptions()
+    options.add_argument("executable_path=C:\Program Files\chromedriver-win64\chromedriver.exe")
+    driver = webdriver.Chrome(options=options)
+    yield driver
+    driver.quit()
