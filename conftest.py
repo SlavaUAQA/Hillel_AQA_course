@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
 import pytest
-from selenium import webdriver
-import requests
-
+from selenium.webdriver import Firefox
+from selenium.webdriver.firefox.options import Options
 
 @pytest.fixture
-def chrome():
-    options = webdriver.ChromeOptions()
-    options.add_argument("executable_path=/Users/viacheslavzakurenko/Downloads/chromedriver-mac-arm64/chromedriver")
-    driver = webdriver.Chrome(options=options)
+def firefox():
+    options = Options()
+    driver = Firefox(executable_path="/Users/viacheslavzakurenko/PycharmProjects/Hillel_AQA_course/selenium_tasks/geckodriver")
     yield driver
     driver.quit()
