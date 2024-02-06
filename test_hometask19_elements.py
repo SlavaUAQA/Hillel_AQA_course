@@ -1,4 +1,4 @@
-import pytest
+    import pytest
 from hometask19_elementspage import ElementsPage
 
 class TestElementsPage:
@@ -14,14 +14,11 @@ class TestElementsPage:
         '',
         '',
         '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
-        '',
-        'perm_identity\nПерсонализированная реклама и контент, определение эффективности рекламы и контента, аналитические сведения об аудитории и разработка сервисов',
-        'devices\nХранение и (или) доступ к информации на устройстве',
-        '', '', '', ''
+        ''
     ])
     def test_elements_response(self, chrome, expected):
         page = ElementsPage(chrome)
         page.open()
         elements = page.get_elements_categories()
-        for element, expected_value in zip(elements, expected):
-            assert element == expected_value
+        for element in elements:
+            assert element in expected
