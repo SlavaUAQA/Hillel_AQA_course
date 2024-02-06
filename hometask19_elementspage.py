@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver import Firefox
 class ElementsPage:
     def __init__(self, driver):
         self.driver = driver
@@ -14,8 +15,12 @@ class ElementsPage:
         categories = [cat.text for cat in self.driver.find_elements(*self.element_categories)]
         return categories
 
+    def close(self):
+        self.driver.close()
+        return self
+
 def obj1():
-    a = ElementsPage(webdriver.Chrome())
+    a = ElementsPage(webdriver.Firefox())
     a.open()
     for i in a.get_elements_categories():
         print(i)
