@@ -13,7 +13,7 @@ def fixture_Chuck(request):
 
 @pytest.fixture(scope="function")
 def fixture_sql():
-    connection = sqlite3.connect("hometask_sport.db")
+    connection = sqlite3.connect("hometask31.db")
     cursor = connection.cursor()
     yield cursor
     cursor.close()
